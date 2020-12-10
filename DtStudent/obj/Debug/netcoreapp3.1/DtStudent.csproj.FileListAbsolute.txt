@@ -1,0 +1,9 @@
+D:\NetCore\CrudOpration\DtStudent\bin\Debug\netcoreapp3.1\DtStudent.deps.json
+D:\NetCore\CrudOpration\DtStudent\bin\Debug\netcoreapp3.1\DtStudent.dll
+D:\NetCore\CrudOpration\DtStudent\bin\Debug\netcoreapp3.1\DtStudent.pdb
+D:\NetCore\CrudOpration\DtStudent\obj\Debug\netcoreapp3.1\DtStudent.csprojAssemblyReference.cache
+D:\NetCore\CrudOpration\DtStudent\obj\Debug\netcoreapp3.1\DtStudent.AssemblyInfoInputs.cache
+D:\NetCore\CrudOpration\DtStudent\obj\Debug\netcoreapp3.1\DtStudent.AssemblyInfo.cs
+D:\NetCore\CrudOpration\DtStudent\obj\Debug\netcoreapp3.1\DtStudent.csproj.CoreCompileInputs.cache
+D:\NetCore\CrudOpration\DtStudent\obj\Debug\netcoreapp3.1\DtStudent.dll
+D:\NetCore\CrudOpration\DtStudent\obj\Debug\netcoreapp3.1\DtStudent.pdb

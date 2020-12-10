@@ -1,0 +1,68 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model CrudOpration.Models.StudentModel
+
+<style>
+    .field-validation-error{
+        color:orangered;
+    }
+    body{
+        background-color:whitesmoke;
+    }
+</style>
+<div  style="background-color:white">
+    <br /><br />
+    <form method="post" >
+        <div class="row container form-group ">
+            <div class="form-row col-12">
+                @Html.LabelFor(m => m.Name, new { @class = "col-4 " })
+                @Html.TextBoxFor(m => m.Name, new { @class = "col-8 form-control" })
+                @Html.ValidationMessageFor(m => m.Name)
+            </div>
+            <br /><br />
+            <div class="form-row col-12">
+                @Html.LabelFor(m => m.Email, new { @class = "col-4 " })
+                @Html.TextBoxFor(m => m.Email, new { @class = "col-8 form-control" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+            <br /><br />
+            <div class="form-row col-12">
+                @Html.LabelFor(m => m.Class, new { @class = "col-4 " })
+                @Html.TextBoxFor(m => m.Class, new { @class = "col-8 form-control" })
+                @Html.ValidationMessageFor(m => m.Class)
+            </div>
+           
+            <div>
+                <input type="submit" value="Submit" class="btn btn-success form-control" />
+            </div>
+            <br />
+        </div>
+    </form>
+    <br /><br />
+
+    <table class="table table-striped ">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Class</th>
+            <th>Action</th>
+        </tr>
+        @foreach (StudentModel item in ViewBag.Data)
+        {
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.Email</td>
+        <td>@item.Class</td>
+        <td>
+
+            <a asp-controller="student" asp-action="update" asp-route-id="@item.Id"><button class="btn btn-success">Edit</button></a>
+            <a asp-controller="student" asp-action="delete" asp-route-id="@item.Id"><button class="btn btn-danger">Delete</button></a>
+        </td>
+    </tr>
+        }
+    </table>
+</div>
